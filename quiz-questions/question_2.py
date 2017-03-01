@@ -29,7 +29,12 @@ def number_of_customers_per_state(customers):
     }
     """
     # Write your code here
-    pass
+    count_of_customers = 0
+    result = ''
+    for name in customers:
+        count_of_customers += len(customers.keys())
+        result += str(name) + ': ' + str(count_of_customers) + '\n'
+        count_of_customers = 0
 
 
 class NumberOfCustomersPerStateTestCase(unittest.TestCase):
